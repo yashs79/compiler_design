@@ -1,0 +1,7 @@
+jupyter-ra2211026010165@cintel:~$ flex calc.l
+jupyter-ra2211026010165@cintel:~$ bison -d calc.y
+jupyter-ra2211026010165@cintel:~$ gcc lex.yy.c calc.tab.c -o calculator -lm
+jupyter-ra2211026010165@cintel:~$ ./calculator
+Calculator: Enter expressions (e.g., 2 + 3 * 4). Press Ctrl+D to exit.
+2 + 3 * 4
+Result: 14
